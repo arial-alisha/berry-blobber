@@ -40,14 +40,14 @@ var writeBerries = function (berry) {
 
   document.write('<ol>');
 
-  berry.forEach(function (berry) {
+  berry.forEach {
     document.write('<li>');
     document.write('<h2>' + berry.blueberries + '</h2>');
 
     document.write('<dl>');
 
-    document.write('<dt>Grows on a shrub?</dt>')
-    document.write('<dd>')
+    document.write('<dt>Grows on a shrub?</dt>');
+    document.write('<dd>');
 
     if (berry.onShrub) {
       document.write('Yes');
@@ -72,7 +72,7 @@ var writeBerries = function (berry) {
     document.write('</li>');
     });
 
-    document.write('</ol>')
+    document.write('</ol>');
   };
 // ##########################################################
 // START DO NOT CHANGE ZONE
