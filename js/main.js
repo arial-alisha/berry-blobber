@@ -39,41 +39,42 @@ var writeBerries = function (berry) {
   document.write('<h1>Berries</h1>');
 
   document.write('<ol>');
+};
 
-  berry.forEach {
-    document.write('<li>');
-    document.write('<h2>' + berry.blueberries + '</h2>');
+berry.forEach(function (berry) {
+  document.write('<li>');
+  document.write('<h2>' + berry.name + '</h2>');
 
-    document.write('<dl>');
+  document.write('<dl>');
 
-    document.write('<dt>Grows on a shrub?</dt>');
-    document.write('<dd>');
+  document.write('<dt>Grows on a shrub?</dt>');
+  document.write('<dd>');
 
-    if (berry.onShrub) {
-      document.write('Yes');
-    } else {
-      document.write('No');
-    }
+  if (berry.onShrub) {
+    document.write('Yes');
+  } else {
+    document.write('No');
+  }
 
-    document.write('</dd>');
+  document.write('</dd>');
 
-    document.write('</dd>');
+  document.write('</dd>');
 
-    document.write('<dt>Energy</dt>');
-    document.write('<dd>' + berry.energy + ' kJ</dd>');
+  document.write('<dt>Energy</dt>');
+  document.write('<dd>' + berry.energy + ' kJ</dd>');
 
-    document.write('<dt>Carbohydrates</dt>');
-    document.write('<dd>' + berry.carbs + ' g</dd>');
+  document.write('<dt>Carbohydrates</dt>');
+  document.write('<dd>' + berry.carbs + ' g</dd>');
 
-    document.write('<dt>Protein</dt>');
-    document.write('<dd>' + berry.protein + ' g</dd>');
+  document.write('<dt>Protein</dt>');
+  document.write('<dd>' + berry.protein + ' g</dd>');
 
-    document.write('</dl>');
-    document.write('</li>');
-    });
+  document.write('</dl>');
+  document.write('</li>');
+});
 
-    document.write('</ol>');
-  };
+document.write('</ol>');
+
 // ##########################################################
 // START DO NOT CHANGE ZONE
 // ##########################################################
